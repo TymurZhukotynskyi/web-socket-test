@@ -30,8 +30,13 @@ echo "✔ MySQL is ready!"
 ./vendor/bin/sail artisan migrate:fresh --seed
 
 # 6. Фронтенд
+rm -f public/hot
+
 ./vendor/bin/sail npm install
 ./vendor/bin/sail npm run build
+
+# 7. Фінальна зачистка кешу
+./vendor/bin/sail artisan optimize:clear
 
 echo "------------------------------------------------"
 echo "Project is ready at http://127.0.0.1"
