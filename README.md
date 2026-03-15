@@ -24,6 +24,12 @@ Required background services. To ensure real-time functionality and event proces
 2. `./vendor/bin/sail artisan queue:work`
 3. `./vendor/bin/sail artisan reverb:start`
 
+Two default users for checking the app:
+
+`email: rowan@vivala.com; password: password`
+
+`email: ben@vivala.com; password: password`
+
 ---
 
 ## ✅ Features & Implementation Checklist
